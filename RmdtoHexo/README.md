@@ -51,7 +51,7 @@ Butterfy 2.x 对修改了部分代码高亮代码，其中，
 </div>
 ```
 
-所以对于V1.x 请使用脚本`old_Rxd.py`, 对于最新版请使用`Rxd.py`
+所以对于V1.x 请使用脚本`old_Rxd.py`, 对于最新版2.x请使用`Rxd.py`
 
 ### Rmd生产的代码
 
