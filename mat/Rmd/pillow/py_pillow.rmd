@@ -1,0 +1,25 @@
+---
+title: "R Math"
+author: "Joaxin"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    toc: true
+    theme: architect
+    highlight: github
+---
+
+```{r style, echo=FALSE, results="asis", message=FALSE}
+knitr::opts_chunk$set(tidy = FALSE,
+		   message = FALSE, eval = F)
+```
+
+
+
+
+
+## REFERENCES
+
+- https://automatetheboringstuff.com/chapter15/
+
+

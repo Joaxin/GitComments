@@ -1,0 +1,16 @@
+﻿ul>li.item$*5
+h$[title=item$]{Header $}*3
+ul>li.item$@-*5
+ul>li.item$@3*5
+[a='value1' b="value2"]
+p>{Click }+a{here}+{ to continue}
+em>.class
+ul>.class
+table>.row>.col
+link:css
+link:print
+link:favicon
+
+
+
+

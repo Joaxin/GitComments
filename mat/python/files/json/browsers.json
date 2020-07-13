@@ -1,0 +1,41 @@
+[
+  {
+    "command": "在浏览器中打开",
+    "keys": [
+      "f12"
+    ]
+  },
+  {
+    "args": {
+      "application": "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
+      "extensions": ".*",
+      "paths": []
+    },
+    "command": "side_bar_files_open_with",
+    "keys": [
+      "f1"
+    ]
+  },
+  {
+    "args": {
+      "application": "D:/Program Files/fiefox/firefox.exe",
+      "extensions": ".*",
+      "paths": []
+    },
+    "command": "side_bar_files_open_with",
+    "keys": [
+      "f2"
+    ]
+  },
+  {
+    "args": {
+      "application": "C:/Program Files/Internet Explorer/iexplore.exe",
+      "extensions": ".*",
+      "paths": []
+    },
+    "command": "side_bar_files_open_with",
+    "keys": [
+      "f3"
+    ]
+  }
+]
