@@ -1,0 +1,66 @@
+LOCUS       JQ660952                 910 bp    DNA     linear   PLN 27-JUL-2016
+DEFINITION  Cypripedium dickinsonianum xanthine dehydrogenase (xdh) gene,
+            partial cds.
+ACCESSION   JQ660952
+VERSION     JQ660952.1  GI:402503048
+KEYWORDS    .
+SOURCE      Cypripedium dickinsonianum
+  ORGANISM  Cypripedium dickinsonianum
+            Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+            Spermatophyta; Magnoliophyta; Liliopsida; Asparagales; Orchidaceae;
+            Cypripedioideae; Cypripedium.
+REFERENCE   1  (bases 1 to 910)
+  AUTHORS   Gorniak,M., Szlachetko,D.L., Kowalkowska,A.K., Bohdanowicz,J. and
+            Canh,C.X.
+  TITLE     Taxonomic placement of Paphiopedilum canhii (Cypripedioideae;
+            Orchidaceae) based on cytological, molecular and micromorphological
+            evidence
+  JOURNAL   Mol. Phylogenet. Evol. 70, 429-441 (2014)
+   PUBMED   24001522
+REFERENCE   2  (bases 1 to 910)
+  AUTHORS   Gorniak,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-JAN-2012) Molecular Evolution, Gdansk University, ul.
+            Ornitologow 26, Gdansk 80-680, Poland
+FEATURES             Location/Qualifiers
+     source          1..910
+                     /organism="Cypripedium dickinsonianum"
+                     /mol_type="genomic DNA"
+                     /specimen_voucher="Szlachetko s.n."
+                     /db_xref="taxon:1226221"
+     gene            <1..>910
+                     /gene="xdh"
+     mRNA            <1..>910
+                     /gene="xdh"
+                     /product="xanthine dehydrogenase"
+     CDS             <1..>910
+                     /gene="xdh"
+                     /codon_start=1
+                     /product="xanthine dehydrogenase"
+                     /protein_id="AFQ60881.1"
+                     /db_xref="GI:402503049"
+                     /translation="FRIFAKTDNSLYIKSSSENTPSGEFICPSTGKPCSCGESKIHDC
+                     ESSAGAIVGEHRPVSYSEIDGCFYDDKELIFPPELLLRNNLPLKLHGFGGINWYRPLK
+                     LKDLLDLKSIYPKAKLVVGNTEVGIEMNFKNAQYPILISVSHVPELNVLSIKENGLEI
+                     GSSVRLSKLQEVLKKVIAERDKSETSSCRAINEQLKWFAGKQVKNVASVGGNICTASP
+                     ISDLNPLWMAAKAVFQIVDSKGKIRTVLAKDFFLGYRKVDLAQGEILLSIFLPWNKYC
+                     EFVKEFKQSHRREDDIAIVNAGMRVHL"
+ORIGIN      
+        1 tttcgtattt ttgctaagac tgataactcc ttgtacatta aatcatcttc agagaataca
+       61 ccatctggtg aatttatttg cccgtcaact ggaaaaccat gttcatgtgg agaaagtaaa
+      121 attcatgatt gtgaaagttc agcaggtgct attgttggcg aacacaggcc tgtctcatat
+      181 agtgaaattg atggatgctt ctacgatgat aaggaactta tttttccacc agaactgctt
+      241 ttgagaaata atcttccact gaaattgcat ggttttggtg gaattaattg gtatcgacct
+      301 ctaaaactta aagatctgtt ggacctcaag tcaatttacc caaaggcaaa acttgttgta
+      361 ggtaatacag aagtaggaat tgaaatgaat tttaaaaatg cccaatatcc aatcctgatc
+      421 tctgtctcgc atgtacctga gctcaatgtt ttgagcataa aggagaatgg tcttgagata
+      481 ggttcttctg taagattgag taaacttcaa gaagttctca aaaaggtgat agcagaacga
+      541 gataagtctg agacctcctc atgcagggcc atcaatgagc agctaaaatg gtttgctgga
+      601 aagcaggtga aaaatgttgc ttctgttggt ggaaatatct gtactgctag cccaatttca
+      661 gatttgaatc cactatggat ggctgctaag gcagtgttcc aaattgtcga ttctaaaggg
+      721 aaaatcagaa ctgttcttgc caaggacttc tttcttggtt accgcaaagt tgatcttgcc
+      781 caaggtgaaa tactattgtc aattttctta ccatggaaca agtattgtga gtttgtcaaa
+      841 gaatttaagc aatcacaccg gagagaagat gatattgcta ttgtgaatgc tggcatgcgt
+      901 gtacatctta
+//
+
