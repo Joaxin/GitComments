@@ -1,0 +1,43 @@
+---
+title: "matplotlib_demo"
+output: html_notebook
+---
+#demo
+b---blue   c---cyan  g---green    k----black
+m---magenta r---red  w---white    y----yellow
+
+-      实线
+--     短线
+-.     短点相间线
+：     虚点线
+
+.  Point marker
+,  Pixel marker
+o  Circle marker
+v  Triangle down marker 
+^  Triangle up marker 
+<  Triangle left marker 
+>  Triangle right marker 
+1  Tripod down marker
+2  Tripod up marker
+3  Tripod left marker
+4  Tripod right marker
+s  Square marker
+p  Pentagon marker
+*  Star marker
+h  Hexagon marker
+H  Rotated hexagon D Diamond marker
+d  Thin diamond marker
+| Vertical line (vlinesymbol) marker
+_  Horizontal line (hline symbol) marker
++  Plus marker
+x  Cross (x) marker
+
+```{python}
+import matplotlib.pyplot as plt   
+import numpy as np   
+y = np.arange(1, 3, 0.3)   
+plt.plot(y, 'cx--', y+1, 'mo:', y+2, 'kp-.');  
+plt.show() 
+```
+

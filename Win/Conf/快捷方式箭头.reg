@@ -1,0 +1,11 @@
+﻿REGEDIT4 
+
+;renew
+
+[HKEY_CLASSES_ROOT\lnkfile] 
+
+"IsShortcut"="" 
+
+[HKEY_CLASSES_ROOT\piffile] 
+
+"IsShortcut"="" 
