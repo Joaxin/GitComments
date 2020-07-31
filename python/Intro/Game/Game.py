@@ -5,15 +5,6 @@ import random
 
 times = 1
 
-def printPicnic(itemsDict, leftWidth, rightWidth, Symbol1='.',Symbol2='-'):
-    print('PICNIC ITEMS'.center(leftWidth + rightWidth, Symbol2))
-    for k, v in itemsDict.items():
-        print(k.ljust(leftWidth, Symbol1) + str(v).rjust(rightWidth))
-
-picnicItems = {'sandwiches': 4, 'apples': 12, 'cups': 4, 'cookies': 8000}
-printPicnic(picnicItems, 12, 5)
-printPicnic(picnicItems, 20, 6, "*", "/")
-
 class people:
     name = ''
     hp = 10

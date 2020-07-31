@@ -9,7 +9,7 @@ for i in range(2, length):
         field.append(i)
 for Fence in field:
     qu = length // Fence
-    result = {x: cipher[qu*x:qu*x+qu:] for x in range(Fence)}
+    result = {x: cipher[qu * x:qu * x+ qu:] for x in range(Fence)}
     answer = []
     for i in range(qu):
         for j in range(Fence):
