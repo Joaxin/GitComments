@@ -14,6 +14,11 @@ knitr::opts_chunk$set(tidy = FALSE,
 		   message = FALSE)
 ```
 
+```{r}
+library(reticulate)
+```
+
+
 
 > 这一章我们来学习下Python的图像处理。
 
@@ -23,11 +28,21 @@ PIL：保持与老模块 Python Imaging Library 向后兼容
 
 ## 颜色
 
-先参考一下这个网址：https://color.adobe.com/create/color-wheel/
+我们先看一下三原色，
+
+
+   | 名称  |        RGBA值        |  名称  |       RGBA值       |
+   | :---: | :------------------: | :----: | :----------------: |
+   | White | (255, 255, 255, 255) |  Red   |  (255, 0, 0, 255)  |
+   | Green |   (0, 255, 0, 255)   |  Blue  |  (0, 0, 255, 255)  |
+   | Gray  | (128, 128, 128, 255) | Yellow | (255, 255, 0, 255) |
+   | Black |    (0, 0, 0, 255)    | Purple | (128, 0, 128, 255) |
+
+然后参考一下这个网址：https://color.adobe.com/create/color-wheel/
 
 相信你已经学会饿了颜色的基础理论，那我们直接用pillow来进行简单的颜色处理吧。
 
-RGBA值表示为四个整数值的元组。例如：红色不透明表示为（255，0，0，255）。
+ > RGBA值表示为四个整数值的元组。例如：红色不透明表示为（255，0，0，255）。
 
 
 ```{python}
@@ -81,12 +96,16 @@ width, height = Im.size
 ## (1250, 1000)
 #Im.filename
 ## 'demo.jpg'
+# image.mode
+## 'RGB'
 #Im.format
 ## 'JPEG'
 #Im.format_description
 ## 'JPEG (ISO 10918)'
 Im.save('demo.png') ## save as jpg format
+Im.show()
 ```
+
 
 Pillow还提供了Image.new()函数用来创建一个空白的图像用于后续的图像处理，这里我们创建了一个带有紫色背景的图像和一个透明背景的小方块。
 
@@ -98,12 +117,16 @@ im2 = Image.new('RGBA', (20, 20))
 im2.save('transparentImage.png') 
 
 ```
+
 通过crop()方法，可进行一下图像裁剪,我们凭感觉找一下头的位置。
+
 ```{python}
 faceIm = Im.crop((700, 0, 1250, 500)) 
 faceIm.save('cropped.png') 
 ```
 ![cropped.png](cropped.png)
+
+
 copy()方法用于复制一个新的和原来一模一样的图像，paste()方法在 Image 对象调用，将另一个图像粘贴在它上面，或者说加一个图层。
 ```{python}
 Imwidth, Imheight = Im.size
@@ -146,6 +169,24 @@ Im.transpose(Image.FLIP_LEFT_RIGHT).save('horizontal_flip.jpg')
 Im.transpose(Image.FLIP_TOP_BOTTOM).save('vertical_flip.jpg') 
 ```
 ![horizontal_flip.jpg](horizontal_flip.jpg) ![vertical_flip.jpg](vertical_flip.jpg)
+
+滤镜效果
+
+```{python}
+from PIL import Image, ImageFilter
+Im.filter(ImageFilter.CONTOUR).save('filter.jpg') 
+```
+
+![filter.jpg](filter.jpg)
+
+生成缩略图
+
+```{python}
+size = 64, 64
+Im.thumbnail(size)
+Im.show()
+```
+
 
 ##  在图像上绘画 
 
